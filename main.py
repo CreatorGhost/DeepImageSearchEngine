@@ -36,6 +36,9 @@ def generate_image_embedding(image_path):
     embedding = torch.flatten(embedding).numpy()
     return embedding
 
+img = "images/image1.jpg"
+embeddings = generate_image_embedding(img)
+print(embeddings)
 
 if __name__ == "__main__":
     # Initialize your Redis vector database connection
